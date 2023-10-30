@@ -16,7 +16,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return MaterialApp(
       title: 'Login',
       home: Scaffold(
-        backgroundColor: const Color(0xFFedf2f4),
+        backgroundColor: const Color(0xFFFEEB82),
         body: SingleChildScrollView(
           child: Container(
             padding: const EdgeInsets.fromLTRB(20, 100, 20, 0),
@@ -29,7 +29,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(1000.0),
                       border: Border.all(
-                        color: const Color(0xFF2b2d42),
+                        color: const Color(0xFFF05F42),
                         width: 5.0,
                       ),
                     ),
@@ -125,7 +125,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           )),
                   style: TextButton.styleFrom(
                     minimumSize: const Size.fromHeight(50),
-                    backgroundColor: const Color(0xFF2b2d42),
+                    backgroundColor: const Color(0xFFF05F42),
                     foregroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(5),
@@ -140,7 +140,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   onPressed: () => Navigator.pushNamed(context, '/register'),
                   style: TextButton.styleFrom(
                     minimumSize: const Size.fromHeight(50),
-                    backgroundColor: const Color(0xFF8d99ae),
+                    backgroundColor: const Color(0xFFDAAC18),
                     foregroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(5),
