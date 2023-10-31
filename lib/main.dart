@@ -73,7 +73,7 @@ class _SplashScreenState extends State<SplashScreen> {
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 40.0),
                 child: Text(
-                  'Always your Number One, Till Infinity and Beyond',
+                  'Victoria, Till Infinity and Beyond',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 25,
@@ -85,10 +85,9 @@ class _SplashScreenState extends State<SplashScreen> {
             ]),
           ),
           const SizedBox(height: 40),
-          // const CircularProgressIndicator(),
           const SpinKitPouringHourGlass(
             color: Colors.black, // Warna animasi gelombang
-            size: 80.0, // Ukuran animasi gelombang
+            size: 60.0, // Ukuran animasi gelombang
           ),
         ],
       ),

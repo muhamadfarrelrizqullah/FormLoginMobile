@@ -31,6 +31,7 @@ dependencies:
   flutter:
     sdk: flutter
   http: ^1.1.0
+  email_validator: '^2.1.16'
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -60,9 +61,8 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-    - img/icon.png
+    - img/icon.jpg
     - img/Logo.png
-    - img/bg.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
