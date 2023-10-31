@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'dart:async';
 import 'package:uts_mfarrel/login.dart';
 import 'package:uts_mfarrel/register.dart';
@@ -22,14 +23,10 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => const SplashScreen(),
         '/main': (context) => const LoginScreen(),
-        // '/register': (context) => const RegisterScreen(),
+        '/register': (context) => const RegisterScreen(),
       },
     );
   }
-}
-
-class RegisterScreen {
-  const RegisterScreen();
 }
 
 class SplashScreen extends StatefulWidget {
@@ -58,20 +55,41 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFFEEB82),
+      backgroundColor: const Color(0xFFFECD66),
       body: Flex(
         direction: Axis.vertical,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Center(
-            child: Image.asset(
-              'img/Logo.png',
-              width: 250,
-              height: 250,
-            ),
+            child: Column(children: [
+              Image.asset(
+                'img/Logo.png',
+                width: 250,
+                height: 250,
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 40.0),
+                child: Text(
+                  'Always your Number One, Till Infinity and Beyond',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 25,
+                    color: Color(0xFF1C1819),
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ]),
           ),
           const SizedBox(height: 40),
-          const CircularProgressIndicator(),
+          // const CircularProgressIndicator(),
+          const SpinKitPouringHourGlass(
+            color: Colors.black, // Warna animasi gelombang
+            size: 80.0, // Ukuran animasi gelombang
+          ),
         ],
       ),
     );

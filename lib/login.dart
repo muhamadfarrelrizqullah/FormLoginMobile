@@ -29,7 +29,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(1000.0),
                       border: Border.all(
-                        color: const Color(0xFFF05F42),
+                        color: const Color(0xFFDAAC18),
                         width: 5.0,
                       ),
                     ),
@@ -52,8 +52,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   ],
                 ),
                 TextFormField(
-                  decoration:
-                      const InputDecoration(labelText: 'Enter your Email'),
+                  decoration: const InputDecoration(
+                      labelText: 'Enter your Email',
+                      labelStyle: TextStyle(color: Colors.black)),
                   controller: email,
                 ),
                 const SizedBox(
@@ -72,8 +73,10 @@ class _LoginScreenState extends State<LoginScreen> {
                   obscureText: true,
                   enableSuggestions: false,
                   autocorrect: false,
-                  decoration:
-                      const InputDecoration(labelText: 'Enter your Password'),
+                  decoration: const InputDecoration(
+                    labelText: 'Enter your Password',
+                    labelStyle: TextStyle(color: Colors.black),
+                  ),
                   controller: password,
                 ),
                 const SizedBox(
