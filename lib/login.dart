@@ -117,7 +117,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           context: context,
                           builder: (context) => AlertDialog(
                             title: const Text(
-                              'Register Screen',
+                              'Login Screen',
                               style: TextStyle(
                                   fontWeight: FontWeight.bold, fontSize: 20),
                             ),
